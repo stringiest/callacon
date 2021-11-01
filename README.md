@@ -7,7 +7,7 @@ Historically, all of the organisation has been undertaken by a single person, bu
 
 There are about 50 attendees to each event, and an appropriate number of holiday cottages are booked and paid for centrally through the Gaming Weekend account. Costs are then recovered from attendees.
 
-In addition, games are pitched by GMs, and need to be scheduled.
+In addition, games are pitched by GMs, and need to be scheduled and to be able to be signed up for.
 
 This project seeks to provide a bespoke website, giving attendees a one-stop-shop to access all Callacon-related info, and making it easier for the committee to organise the various aspects of the gaming weekend.
 
