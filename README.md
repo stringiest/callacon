@@ -7,7 +7,9 @@ There are about 50 attendees to each event, and an appropriate number of holiday
 
 In addition, games are pitched by GMs, and need to be scheduled.
 
-This project seeks to provide a bespoke website for the committee, making it easier to organise the various aspects of the gaming weekend.  
+This project seeks to provide a bespoke website, giving attendees a one-stop-shop to access all Callacon-related info, and making it easier for the committee to organise the various aspects of the gaming weekend.
+
+We already have (callacon.co.uk)[www.callacon.co.uk] reserved, so could deploy there if agreed by the committee.
 
 # User Stories
 
