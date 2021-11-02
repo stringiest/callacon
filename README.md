@@ -31,7 +31,7 @@ Once I've listed out all of the user stories I can think of, I'll pull a few tog
 ## Diagrams
 Initial ERD showing relationship between users, attendance, games and enrollments into games:
 
-![Screenshot from 2021-11-02 09-03-02](https://user-images.githubusercontent.com/62619601/139821826-89a6c2bc-512c-4907-aa2d-f125e280b8aa.png)
+![Screenshot from 2021-11-02 17-21-23](https://user-images.githubusercontent.com/62619601/139914556-b201a10e-d2b9-494e-aa8d-e15fd2d440d9.png)
 
 ## User Stories
 ### Log in, log out & limiting access
