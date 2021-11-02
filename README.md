@@ -29,7 +29,7 @@ Once I've listed out all of the user stories I can think of, I'll pull a few tog
 - [ ] Ability to see all games
  
 ## Diagrams
-Initial ERD showing relationship between users, attendence, games and enrollments into games:
+Initial ERD showing relationship between users, attendance, games and enrollments into games:
 
 ![Screenshot from 2021-11-02 09-03-02](https://user-images.githubusercontent.com/62619601/139821826-89a6c2bc-512c-4907-aa2d-f125e280b8aa.png)
 
