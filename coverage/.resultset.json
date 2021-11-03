@@ -7,6 +7,12 @@
           null
         ]
       },
+      "/home/lucy/Projects/callacon/app/helpers/sessions_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/home/lucy/Projects/callacon/app/helpers/users_helper.rb": {
         "lines": [
           1,
@@ -17,24 +23,24 @@
         "lines": [
           1,
           1,
-          1,
+          5,
           null,
           null,
           1,
-          0,
+          4,
           null,
-          0,
-          0,
-          0,
+          4,
+          1,
+          1,
           null,
-          0,
+          3,
           null,
           null,
           null,
           1,
           null,
           1,
-          0,
+          4,
           null,
           null,
           null,
@@ -49,6 +55,13 @@
       "/home/lucy/Projects/callacon/app/controllers/application_controller.rb": {
         "lines": [
           1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          9,
+          null,
           null
         ]
       },
@@ -60,8 +73,8 @@
           1,
           null,
           1,
-          0,
-          0,
+          6,
+          6,
           null,
           null
         ]
@@ -70,6 +83,33 @@
         "lines": [
           1,
           1,
+          null
+        ]
+      },
+      "/home/lucy/Projects/callacon/app/controllers/sessions_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          null,
           null
         ]
       },
@@ -112,6 +152,6 @@
         }
       }
     },
-    "timestamp": 1635877104
+    "timestamp": 1635932074
   }
 }
