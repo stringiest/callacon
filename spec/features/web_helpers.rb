@@ -8,3 +8,11 @@ def create_user_in_test_db
       password_confirmation: 'password123'
     )
 end
+
+def login_successfully
+  visit('/sessions/new')
+
+  fill_in('email', with: 'john@example.com')
+  fill_in('password', with: 'password123')
+  click_button('Sign In')
+end
