@@ -23,8 +23,8 @@ There are various functions that this site could perform:
 6. Give attendees ability to see outstanding balances
 
 Once I've listed out all of the user stories I can think of, I'll pull a few together to make an MVP. (Perhaps don't include restricted ability to create an account in MVP.) MVP may include:
-- [ ] Secure log in/log out
-- [ ] Ability to register attendance
+- [X] Secure log in/log out
+- [X] Ability to register attendance
 - [ ] Ability to add a game
 - [ ] Ability to see all games
 
