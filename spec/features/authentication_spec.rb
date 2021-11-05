@@ -1,11 +1,11 @@
 require 'rails_helper'
 
-RSpec.feature "Registration", :type => :feature do
-  xscenario 'user logs in successfully' do
+RSpec.feature "Authentication", :type => :feature do
+  scenario 'user logs in successfully' do
     create_user_in_test_db
     login_successfully
 
-    expect(current_path).to eq('/posts')
+    expect(current_path).to eq('/bookings')
     expect(page).to have_content('Signed in successfully')
   end
 

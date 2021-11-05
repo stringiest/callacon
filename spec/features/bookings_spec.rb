@@ -1,0 +1,43 @@
+require 'rails_helper'
+
+RSpec.feature "Bookings", :type => :feature do
+  context 'logged in user' do
+    before :each do
+      login_and_make_booking
+    end
+
+    scenario 'user can sign in and make a booking' do
+      expect(current_path).to eq('/bookings')
+      expect(page).to have_content('2021-11-01')
+      expect(page).to have_content('2021-11-08')
+    end
+
+    scenario 'user can edit a booking' do
+      click_link('Edit')
+      fill_in('arrival date', with: '04/11/2021')
+
+      click_button('Submit')
+
+      expect(current_path).to eq('/bookings')
+      expect(page).to have_content('2021-11-04')
+      expect(page).to have_content('2021-11-08')
+    end
+
+    xscenario 'user can delete a booking' do
+      click_link('Delete')
+      click_link('ok')
+    
+      expect(current_path).to eq('/bookings')
+      expect(page).not_to have_content('2021-11-01')
+      expect(page).not_to have_content('2021-11-08')
+    end
+  end
+
+  context 'non-signed in user' do
+    scenario 'user cannot make a booking if not signed in' do
+      visit('/bookings')
+
+      expect(page).to have_no_link('New Booking')
+    end
+  end
+end
