@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.feature "Registration", :type => :feature do
-  xscenario 'user is logged in, then logs out' do
+RSpec.feature "Logging out", :type => :feature do
+  scenario 'user is logged in, then logs out' do
     create_user_in_test_db
     login_successfully
 

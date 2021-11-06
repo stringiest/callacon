@@ -7,6 +7,12 @@
           null
         ]
       },
+      "/home/lucy/Projects/callacon/app/helpers/bookings_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/home/lucy/Projects/callacon/app/helpers/sessions_helper.rb": {
         "lines": [
           1,
@@ -60,22 +66,15 @@
           1,
           null,
           1,
-          13,
+          42,
           null,
           null
         ]
       },
-      "/home/lucy/Projects/callacon/app/models/user.rb": {
+      "/home/lucy/Projects/callacon/app/models/booking.rb": {
         "lines": [
           1,
           1,
-          1,
-          1,
-          null,
-          1,
-          8,
-          8,
-          null,
           null
         ]
       },
@@ -86,6 +85,21 @@
           null
         ]
       },
+      "/home/lucy/Projects/callacon/app/models/user.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          12,
+          12,
+          null,
+          null
+        ]
+      },
       "/home/lucy/Projects/callacon/app/controllers/sessions_controller.rb": {
         "lines": [
           1,
@@ -93,12 +107,12 @@
           null,
           null,
           1,
-          2,
+          6,
           null,
-          2,
-          0,
-          0,
-          0,
+          6,
+          4,
+          4,
+          4,
           null,
           2,
           2,
@@ -106,9 +120,62 @@
           null,
           null,
           1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/lucy/Projects/callacon/app/controllers/bookings_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          8,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
           0,
           0,
-          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
           null,
           null
         ]
@@ -152,6 +219,6 @@
         }
       }
     },
-    "timestamp": 1635957325
+    "timestamp": 1636222353
   }
 }
