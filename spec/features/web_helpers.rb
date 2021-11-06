@@ -17,14 +17,15 @@ def login_successfully
   click_button('Sign In')
 end
 
-def login_and_make_booking
-  create_user_in_test_db
-  login_successfully
+def make_booking
+  expect(current_path).to eq('/bookings')
 
   click_link('New Booking')
+  expect(current_path).to eq('/bookings/new')
 
   fill_in('arrival date', with: '01/11/2021')
   fill_in('departure date', with: '08/11/2021')
 
   click_button('Submit')
+  expect(current_path).to eq('/bookings')
 end

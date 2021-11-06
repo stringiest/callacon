@@ -3,7 +3,9 @@ require 'rails_helper'
 RSpec.feature "Bookings", :type => :feature do
   context 'logged in user' do
     before :each do
-      login_and_make_booking
+      create_user_in_test_db
+      login_successfully
+      make_booking
     end
 
     scenario 'user can sign in and make a booking' do
