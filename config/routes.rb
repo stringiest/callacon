@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get '/logout', controller: 'sessions', action: 'destroy'
 
   resources :bookings
+
+  resources: games
 end
