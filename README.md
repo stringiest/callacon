@@ -23,18 +23,19 @@ There are various functions that this site could perform:
 6. Give attendees ability to see outstanding balances
 
 Once I've listed out all of the user stories I can think of, I'll pull a few together to make an MVP. (Perhaps don't include restricted ability to create an account in MVP.) MVP may include:
-- [X] Secure log in/log out
-- [X] Ability to register attendance
-- [ ] Ability to add a game
+
+- [x] Secure log in/log out
+- [x] Ability to register attendance
+- [x] Ability to add a game
 - [ ] Ability to see all games
 
 ## Next steps
 Restrict bookings view so that you can only view your own bookings
  
 ## Diagrams
-Initial ERD showing relationship between users, attendance, games and enrollments into games:
+Working ERD showing relationship between users, attendance, games and enrollments into games:
 
-![Screenshot from 2021-11-02 17-21-23](https://user-images.githubusercontent.com/62619601/139914556-b201a10e-d2b9-494e-aa8d-e15fd2d440d9.png)
+![Current ERD for application](app/assets/images/ERD_for_callacon_app_v1.1.png)
 
 ## User Stories
 ### Log in, log out & limiting access
@@ -93,3 +94,18 @@ As a player
 So that I can enjoy myself
 I'd like to be able to register an interest in a game
 ```
+
+## Game questionnaire fields
+
+| Field | Mandatory?| Field Type | Notes |
+| ---- | ---- | ---- | ---- |
+| GM name | Yes | user_id as FK | name retrieved from users table |
+| title | Yes | string |  |
+| system | No | string |  |
+| description | Yes | text |  |
+| min_players | Yes | integer |  |
+| max_players | Yes | integer |  |
+| pref_when | No | string (initially) | link to scheduler eventually |
+| desired_players | No | text (initially) | maybe link to users somehow eventually |
+| campaign | Yes | string (initially) | add a campaign table to abstract later |
+| game_duration_hours | Yes | numeric (precision = 4, scale = 2) | present on view with 'hours' after it |

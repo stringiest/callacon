@@ -28,3 +28,6 @@
 
 # Ignore testing coverage files
 coverage/*
+
+# Ignore ruby version file
+.ruby-version

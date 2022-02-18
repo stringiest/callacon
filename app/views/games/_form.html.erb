@@ -1,0 +1,23 @@
+<div class="card mx-auto text-center px-4 pt-4 pb-3 mt-5" style="width: 375px;">
+  <%= form_for @game do |f| %>
+    <%= f.label :title, 'Game title' %>
+    <%= f.text_field :title, class: "form-control mb-3" %>
+    <%= f.label :system, 'System' %>
+    <%= f.text_field :system, class: "form-control mb-3" %>
+    <%= f.label :description, 'Description' %>
+    <%= f.text_field :description, class: "form-control mb-3" %>
+    <%= f.label :min_players, 'Minimum number of players' %>
+    <%= f.number_field :min_players, class: "form-control mb-3" %>
+    <%= f.label :max_players, 'Maximum number of players' %>
+    <%= f.number_field :max_players, class: "form-control mb-3" %>
+    <%= f.label :pref_when, 'When would you prefer to run this game?' %>
+    <%= f.text_field :pref_when, class: "form-control mb-3" %>
+    <%= f.label :desired_players, 'Any essential players?' %>
+    <%= f.text_field :desired_players, class: "form-control mb-3" %>
+    <%= f.label :campaign, 'Is this game part of a campaign?' %>
+    <%= f.text_field :campaign, class: "form-control mb-3" %>
+    <%= f.label :game_duration_hours, 'Approximate game duration in hours' %>
+    <%= f.number_field :game_duration_hours, class: "form-control mb-3" %>
+    <%= f.submit 'Submit', class: "btn btn-success" %>
+  <% end %>
+</div>

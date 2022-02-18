@@ -1,0 +1,77 @@
+<h1 class="text-center" style="font-weight: lighter;"> Games </h1>
+<h3 class="text-center" style="font-weight: lighter;"> Games that I run </h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">GM</th>
+      <th scope="col">Title</th>
+      <th scope="col">System</th>
+      <th scope="col">Description</th>
+      <th scope="col">No. of players</th>
+      <th scope="col">Campaign</th>
+      <th scope="col">Duration (hours)</th>
+      <th scope="col">Scheduled</th>
+      <th scope="col">Desired players</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @games.reverse.each do |game| %>
+      <% if game.user == current_user %>
+      <tr>
+        <td><%= game.user.first_name.capitalize %> <%= game.user.last_name.capitalize %></td>
+        <td><%= game.title %></td>
+        <td><%= game.system %></td>
+        <td><%= game.description %></td>
+        <td><%= game.min_players %> - <%= game.max_players %></td>
+        <td><%= game.campaign %></td>
+        <td><%= game.game_duration_hours %></td>
+        <td><%= game.pref_when %></td>
+        <td><%= game.desired_players %></td>
+        <td>
+          <%= link_to "Edit", edit_game_path(game) %>
+          <%= link_to "Delete", game_path(game), method: :delete, data: { confirm: "Are you sure?"} %>
+        </td>
+      </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+<h3 class="text-center" style="font-weight: lighter;"> All games </h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">GM</th>
+      <th scope="col">Title</th>
+      <th scope="col">System</th>
+      <th scope="col">Description</th>
+      <th scope="col">No. of players</th>
+      <th scope="col">Campaign</th>
+      <th scope="col">Duration (hours)</th>
+      <th scope="col">Scheduled</th>
+      <th scope="col">Desired players</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @games.reverse.each do |game| %>
+      <tr>
+        <td><%= game.user.first_name.capitalize %> <%= game.user.last_name.capitalize %></td>
+        <td><%= game.title %></td>
+        <td><%= game.system %></td>
+        <td><%= game.description %></td>
+        <td><%= game.min_players %> - <%= game.max_players %></td>
+        <td><%= game.campaign %></td>
+        <td><%= game.game_duration_hours %></td>
+        <td><%= game.pref_when %></td>
+        <td><%= game.desired_players %></td>
+        <td>
+          <% if game.user == current_user %>
+            <%= link_to "Edit", edit_game_path(game) %>
+            <%= link_to "Delete", game_path(game), method: :delete, data: { confirm: "Are you sure?"} %>
+          <% end %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
