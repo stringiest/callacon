@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_many :bookings
+  has_many :games
   has_secure_password
   validates :username, uniqueness: true
   validates :email, uniqueness: { message: 'already registered' }
