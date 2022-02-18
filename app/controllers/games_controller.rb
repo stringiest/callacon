@@ -13,8 +13,16 @@ class GamesController < ApplicationController
   end
 
   def create
-    # amend fields for game - check questionnaire
-    @game = Game.new(user_id: session[:user_id], arrival: params[:booking][:arrival], departure: params[:booking][:departure])
+    @game = Game.new(user_id: session[:user_id],
+                    title: params[:game][:title],
+                    system: params[:game][:system],
+                    description: params[:game][:description],
+                    min_players: params[:game][:min_players],
+                    max_players: params[:game][:max_players],
+                    pref_when: params[:game][:pref_when],
+                    desired_players: params[:game][:desired_players],
+                    campaign: params[:game][:campaign],
+                    game_duration_hours: params[:game][:game_duration_hours],)
     if @game.save
       redirect_to games_url
     else
@@ -46,6 +54,8 @@ class GamesController < ApplicationController
 
   def game_params
     # check game params & update
-    params.require(:booking).permit(:arrival, :departure)
+    params.require(:game).permit(:title, :system, :description, :min_players,
+                                :max_players, :pref_when, :desired_players,
+                                :campaign, :game_duration_hours)
   end
 end
