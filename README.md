@@ -23,10 +23,14 @@ There are various functions that this site could perform:
 6. Give attendees ability to see outstanding balances
 
 Once I've listed out all of the user stories I can think of, I'll pull a few together to make an MVP. (Perhaps don't include restricted ability to create an account in MVP.) MVP may include:
+
 - [x] Secure log in/log out
 - [x] Ability to register attendance
 - [x] Ability to add a game
 - [ ] Ability to see all games
+
+## Next steps
+Restrict bookings view so that you can only view your own bookings
  
 ## Diagrams
 Working ERD showing relationship between users, attendance, games and enrollments into games:
