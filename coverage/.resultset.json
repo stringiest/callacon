@@ -13,6 +13,12 @@
           null
         ]
       },
+      "/home/lucy/Projects/callacon/app/helpers/games_helper.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/home/lucy/Projects/callacon/app/helpers/sessions_helper.rb": {
         "lines": [
           1,
@@ -81,6 +87,12 @@
       "/home/lucy/Projects/callacon/app/models/application_record.rb": {
         "lines": [
           1,
+          1,
+          null
+        ]
+      },
+      "/home/lucy/Projects/callacon/app/models/game.rb": {
+        "lines": [
           1,
           null
         ]
@@ -188,6 +200,63 @@
         "branches": {
         }
       },
+      "/home/lucy/Projects/callacon/app/controllers/games_controller.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/home/lucy/Projects/callacon/app/mailers/application_mailer.rb": {
         "lines": [
           0,
@@ -219,6 +288,6 @@
         }
       }
     },
-    "timestamp": 1636222353
+    "timestamp": 1645176098
   }
 }

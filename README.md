@@ -23,9 +23,9 @@ There are various functions that this site could perform:
 6. Give attendees ability to see outstanding balances
 
 Once I've listed out all of the user stories I can think of, I'll pull a few together to make an MVP. (Perhaps don't include restricted ability to create an account in MVP.) MVP may include:
-- [ ] Secure log in/log out
-- [ ] Ability to register attendance
-- [ ] Ability to add a game
+- [x] Secure log in/log out
+- [x] Ability to register attendance
+- [x] Ability to add a game
 - [ ] Ability to see all games
  
 ## Diagrams
@@ -101,7 +101,7 @@ I'd like to be able to register an interest in a game
 | description | Yes | text |  |
 | min_players | Yes | integer |  |
 | max_players | Yes | integer |  |
-| pref_when | No | text (initially) | link to scheduler eventually |
+| pref_when | No | string (initially) | link to scheduler eventually |
 | desired_players | No | text (initially) | maybe link to users somehow eventually |
-| campaign? | Yes | string (initially) | add a campaign table to abstract later |
+| campaign | Yes | string (initially) | add a campaign table to abstract later |
 | game_duration_hours | Yes | numeric (precision = 4, scale = 2) | present on view with 'hours' after it |
