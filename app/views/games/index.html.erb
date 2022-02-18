@@ -66,8 +66,10 @@
         <td><%= game.pref_when %></td>
         <td><%= game.desired_players %></td>
         <td>
-          <%= link_to "Edit", edit_game_path(game) %>
-          <%= link_to "Delete", game_path(game), method: :delete, data: { confirm: "Are you sure?"} %>
+          <% if game.user == current_user %>
+            <%= link_to "Edit", edit_game_path(game) %>
+            <%= link_to "Delete", game_path(game), method: :delete, data: { confirm: "Are you sure?"} %>
+          <% end %>
         </td>
       </tr>
     <% end %>
