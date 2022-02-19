@@ -1,7 +1,17 @@
 <div class="card mx-auto text-center px-4 pt-4 pb-3 mt-5" style="width: 375px;">
   <%= form_for @booking do |f| %>
-    <%= f.text_area :arrival, placeholder: "arrival date", class: "form-control mb-3" %>
-    <%= f.text_area :departure, placeholder: "departure date", class: "form-control mb-3" %>
+    <%= f.label :arrival, 'Arrival Date' %>
+    <%= f.date_field :arrival, class: "form-control mb-3" %>
+    <%= f.label :departure, 'Departure Date' %>
+    <%= f.date_field :departure, class: "form-control mb-3" %>
+    <%= f.label :sps, 'Single Person Supplement?' %>
+    <%= f.check_box :sps, class: "form-control mb-3" %>
+    <%= f.label :family, 'Family Room?' %>
+    <%= f.check_box :family, class: "form-control mb-3" %>
+    <%= f.label :assistance, 'Claim discount from assistance fund' %>
+    <%= f.check_box :assistance, class: "form-control mb-3" %>
+    <%= f.label :donation, 'Make a donation to assistance fund (£)' %>
+    <%= f.number_field :donation, class: "form-control mb-3" %>
     <%= f.submit 'Submit', class: "btn btn-success" %>
   <% end %>
 </div>

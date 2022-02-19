@@ -6,6 +6,10 @@
       <th scope="col">Event</th>
       <th scope="col">Arrival Date</th>
       <th scope="col">Departure Date</th>
+      <th scope="col">Single Person Supplement</th>
+      <th scope="col">Family Room</th>
+      <th scope="col">Assistance Fund Claim</th>
+      <th scope="col">Donation</th>
       <th scope="col">Actions</th>
     </tr>
   </thead>
@@ -14,8 +18,12 @@
       <% if booking.user == current_user %>
       <tr>
         <td> (to follow) </td>
-        <td><%= booking.arrival %></td>
-        <td><%= booking.departure %></td>
+        <td><%= booking.arrival.strftime('%d/%m/%Y') %></td>
+        <td><%= booking.departure.strftime('%d/%m/%Y') %></td>
+        <td><%= check_box_tag :sps, "1", booking.sps, disabled: true %></td>
+        <td><%= check_box_tag :family, "1", booking.family, disabled: true %></td>
+        <td><%= check_box_tag :assistance, "1", booking.assistance, disabled: true %></td>
+        <td><%= booking.donation %></td>
         <td>
           <%= link_to "Edit", edit_booking_path(booking) %>
           <%= link_to "Delete", booking_path(booking), method: :delete, data: { confirm: "Are you sure?"} %>
