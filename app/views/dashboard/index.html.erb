@@ -1,0 +1,67 @@
+<h1 class="text-center" style="font-weight: lighter;"> Callacon </h1>
+<h2 class="text-center" style="font-weight: lighter;"> My Bookings </h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Event</th>
+      <th scope="col">Arrival Date</th>
+      <th scope="col">Departure Date</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @bookings.reverse.each do |booking| %>
+      <% if booking.user == current_user %>
+      <tr>
+        <td> (to follow) </td>
+        <td><%= booking.arrival %></td>
+        <td><%= booking.departure %></td>
+        <td>
+          <%= link_to "Edit", edit_booking_path(booking) %>
+          <%= link_to "Delete", booking_path(booking), method: :delete, data: { confirm: "Are you sure?"} %>
+        </td>
+      </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+<h2 class="text-center" style="font-weight: lighter;"> My Games </h2>
+<h3 class="text-center" style="font-weight: lighter;"> Games that I'm running </h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">GM</th>
+      <th scope="col">Title</th>
+      <th scope="col">System</th>
+      <th scope="col">Description</th>
+      <th scope="col">No. of players</th>
+      <th scope="col">Campaign</th>
+      <th scope="col">Duration (hours)</th>
+      <th scope="col">Scheduled</th>
+      <th scope="col">Desired players</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @games.reverse.each do |game| %>
+      <% if game.user == current_user %>
+      <tr>
+        <td><%= game.user.first_name.capitalize %> <%= game.user.last_name.capitalize %></td>
+        <td><%= game.title %></td>
+        <td><%= game.system %></td>
+        <td><%= game.description %></td>
+        <td><%= game.min_players %> - <%= game.max_players %></td>
+        <td><%= game.campaign %></td>
+        <td><%= game.game_duration_hours %></td>
+        <td><%= game.pref_when %></td>
+        <td><%= game.desired_players %></td>
+        <td>
+          <%= link_to "Edit", edit_game_path(game) %>
+          <%= link_to "Delete", game_path(game), method: :delete, data: { confirm: "Are you sure?"} %>
+        </td>
+      </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+<h3 class="text-center" style="font-weight: lighter;"> Games that I'm playing </h3>
