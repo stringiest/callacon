@@ -17,11 +17,11 @@
       <% if booking.user == current_user %>
       <tr>
         <td> (to follow) </td>
-        <td><%= booking.arrival %></td>
-        <td><%= booking.departure %></td>
-        <td><%= booking.sps %></td>
-        <td><%= booking.family %></td>
-        <td><%= booking.assistance %></td>
+        <td><%= booking.arrival.strftime('%d/%m/%Y') %></td>
+        <td><%= booking.departure.strftime('%d/%m/%Y') %></td>
+        <td><%= check_box_tag :sps, "1", booking.sps, disabled: true %></td>
+        <td><%= check_box_tag :family, "1", booking.family, disabled: true %></td>
+        <td><%= check_box_tag :assistance, "1", booking.assistance, disabled: true %></td>
         <td><%= booking.donation %></td>
         <td>
           <%= link_to "Edit", edit_booking_path(booking) %>
