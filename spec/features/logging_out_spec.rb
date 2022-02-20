@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.feature "Logging out", :type => :feature do
+RSpec.feature 'Logging out', type: :feature do
   scenario 'user is logged in, then logs out' do
     create_user_in_test_db
     login_successfully

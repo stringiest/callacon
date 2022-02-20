@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.feature "Authentication", :type => :feature do
+RSpec.feature 'Authentication', type: :feature do
   scenario 'user logs in successfully' do
     create_user_in_test_db
     login_successfully

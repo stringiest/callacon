@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.feature "Bookings", :type => :feature do
+RSpec.feature 'Bookings', type: :feature do
   context 'logged in user' do
     before :each do
       create_user_in_test_db

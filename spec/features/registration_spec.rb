@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.feature "Registration", :type => :feature do
+RSpec.feature 'Registration', type: :feature do
   scenario 'user signs up successfully' do
     visit('/users/new')
 

@@ -15,7 +15,7 @@ class GamesController < ApplicationController
   def create
     @game = Game.new(user_id: session[:user_id],
                     title: params[:game][:title],
-                    system: params[:game][:system],
+                    game_system: params[:game][:game_system],
                     description: params[:game][:description],
                     min_players: params[:game][:min_players],
                     max_players: params[:game][:max_players],
@@ -53,8 +53,7 @@ class GamesController < ApplicationController
   end
 
   def game_params
-    # check game params & update
-    params.require(:game).permit(:title, :system, :description, :min_players,
+    params.require(:game).permit(:title, :game_system, :description, :min_players,
                                 :max_players, :pref_when, :desired_players,
                                 :campaign, :game_duration_hours)
   end
