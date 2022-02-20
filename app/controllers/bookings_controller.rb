@@ -13,7 +13,13 @@ class BookingsController < ApplicationController
   end
 
   def create
-    @booking = Booking.new(user_id: session[:user_id], arrival: params[:booking][:arrival], departure: params[:booking][:departure])
+    @booking = Booking.new(user_id: session[:user_id],
+                          arrival: params[:booking][:arrival],
+                          departure: params[:booking][:departure],
+                          sps: params[:booking][:sps],
+                          family: params[:booking][:family],
+                          assistance: params[:booking][:assistance],
+                          donation: params[:booking][:donation])
     if @booking.save
       redirect_to bookings_url
     else
@@ -44,6 +50,6 @@ class BookingsController < ApplicationController
   end
 
   def booking_params
-    params.require(:booking).permit(:arrival, :departure)
+    params.require(:booking).permit(:arrival, :departure, :sps, :family, :assistance, :donation)
   end
 end
