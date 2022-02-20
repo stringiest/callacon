@@ -10,6 +10,7 @@
       <th scope="col">Family Room</th>
       <th scope="col">Assistance Fund Claim</th>
       <th scope="col">Donation</th>
+      <th scope="col">Total Cost (£)</th>
       <th scope="col">Actions</th>
     </tr>
   </thead>
@@ -24,6 +25,7 @@
         <td><%= check_box_tag :family, "1", booking.family, disabled: true %></td>
         <td><%= check_box_tag :assistance, "1", booking.assistance, disabled: true %></td>
         <td><%= booking.donation %></td>
+        <td><%= booking.cost / 100 %></td>
         <td>
           <%= link_to "Edit", edit_booking_path(booking) %>
           <%= link_to "Delete", booking_path(booking), method: :delete, data: { confirm: "Are you sure?"} %>
