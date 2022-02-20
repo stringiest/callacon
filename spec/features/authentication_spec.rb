@@ -5,7 +5,7 @@ RSpec.feature "Authentication", :type => :feature do
     create_user_in_test_db
     login_successfully
 
-    expect(current_path).to eq('/bookings')
+    expect(current_path).to eq('/')
     expect(page).to have_content('Signed in successfully')
   end
 

@@ -10,19 +10,19 @@ RSpec.feature "Bookings", :type => :feature do
 
     scenario 'user can sign in and make a booking' do
       expect(current_path).to eq('/bookings')
-      expect(page).to have_content('2021-11-01')
-      expect(page).to have_content('2021-11-08')
+      expect(page).to have_content('01/11/2021')
+      expect(page).to have_content('08/11/2021')
     end
 
     scenario 'user can edit a booking' do
       click_link('Edit')
-      fill_in('arrival date', with: '04/11/2021')
+      fill_in('Arrival Date', with: '04/11/2021')
 
       click_button('Submit')
 
       expect(current_path).to eq('/bookings')
-      expect(page).to have_content('2021-11-04')
-      expect(page).to have_content('2021-11-08')
+      expect(page).to have_content('04/11/2021')
+      expect(page).to have_content('08/11/2021')
     end
 
     xscenario 'user can delete a booking' do

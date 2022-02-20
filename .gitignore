@@ -27,7 +27,7 @@
 /config/master.key
 
 # Ignore testing coverage files
-coverage/*
+/coverage/*
 
 # Ignore ruby version file
 .ruby-version

@@ -18,13 +18,14 @@ def login_successfully
 end
 
 def make_booking
-  expect(current_path).to eq('/bookings')
+  expect(current_path).to eq('/')
 
-  click_link('New Booking')
+  click_link('Add a booking')
   expect(current_path).to eq('/bookings/new')
 
-  fill_in('arrival date', with: '01/11/2021')
-  fill_in('departure date', with: '08/11/2021')
+  fill_in('Arrival Date', with: '01/11/2021')
+  fill_in('Departure Date', with: '08/11/2021')
+  fill_in('Make a donation to assistance fund (£)', with: 0)
 
   click_button('Submit')
   expect(current_path).to eq('/bookings')
