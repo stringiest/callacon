@@ -30,7 +30,7 @@ Once I've listed out all of the user stories I can think of, I'll pull a few tog
 - [ ] Ability to see all games
 
 ## Next steps
-Restrict bookings view so that you can only view your own bookings
+Test bookings & games. Then find an accountancy gem.
  
 ## Diagrams
 Working ERD showing relationship between users, attendance, games and enrollments into games:
