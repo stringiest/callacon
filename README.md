@@ -27,10 +27,13 @@ Once I've listed out all of the user stories I can think of, I'll pull a few tog
 - [x] Secure log in/log out
 - [x] Ability to register attendance
 - [x] Ability to add a game
-- [ ] Ability to see all games
+- [x] Ability to see all games
 
 ## Next steps
 Test bookings & games. Then find an accountancy gem.
+
+## Project Organisation
+[Project board](https://github.com/stringiest/callacon/projects/1)
  
 ## Diagrams
 Working ERD showing relationship between users, attendance, games and enrollments into games:
