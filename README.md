@@ -31,6 +31,16 @@ Once I've listed out all of the user stories I can think of, I'll pull a few tog
 
 ## Next steps
 Restrict bookings view so that you can only view your own bookings
+
+## Next steps Feb 23
+- use existng db to make seed data
+- drop existing db
+- rename system to game_system
+- check pages load okay then push & merge
+- new branch to look at testing for bookings & games
+- fix existing tests
+- look at other steps carried out on testing bookings and games branch & try to work out what to use & what to discard
+- set up a pipeline?
  
 ## Diagrams
 Working ERD showing relationship between users, attendance, games and enrollments into games:
