@@ -31,6 +31,13 @@ Once I've listed out all of the user stories I can think of, I'll pull a few tog
 
 ## Next steps
 Restrict bookings view so that you can only view your own bookings
+
+## Next steps Mar 23
+- new branch to look at testing for bookings & games
+- fix existing tests
+- look at other steps carried out on testing bookings and games branch & try to work out what to use & what to discard
+- set up a pipeline?
+- upgrade to ruby 3
  
 ## Diagrams
 Working ERD showing relationship between users, attendance, games and enrollments into games:
